@@ -56,16 +56,32 @@
 // ЗАДАЧА 6
 // НАПИШІТЬ ПРОГРАМУ , ДЕ МИ У КОРИСТОВАЧА ПИТАЄМОСЬ МІСЯЦЬ НАРОДЖЕННЯ, І ПОКАЗУЄМО У ЯКУ ПОРУ РОКУ ВІН НАРОДИВСЯ
 
-let monthOfBirth = Number(prompt("МІСЯЦЬ НАРОДЖЕННЯ"));
+// let monthOfBirth = Number(prompt("МІСЯЦЬ НАРОДЖЕННЯ"));
 
-if (monthOfBirth === 12 || monthOfBirth === 1 || monthOfBirth === 2) {
-  console.log("Ти народився зимою");
-} else if (monthOfBirth >= 3 && monthOfBirth <= 5) {
-  console.log("Ти народився весною");
-} else if (monthOfBirth >= 6 && monthOfBirth <= 8) {
-  console.log("Ти народився літом");
-} else if (monthOfBirth >= 9 && monthOfBirth <= 11) {
-  console.log("Ти народився восени");
-} else {
-  console.log("Ти ввів невірні данні");
-}
+// if (monthOfBirth === 12 || monthOfBirth === 1 || monthOfBirth === 2) {
+//   console.log("Ти народився зимою");
+// } else if (monthOfBirth >= 3 && monthOfBirth <= 5) {
+//   console.log("Ти народився весною");
+// } else if (monthOfBirth >= 6 && monthOfBirth <= 8) {
+//   console.log("Ти народився літом");
+// } else if (monthOfBirth >= 9 && monthOfBirth <= 11) {
+//   console.log("Ти народився восени");
+// } else {
+//   console.log("Ти ввів невірні данні");
+// }
+
+// ЗАДАЧА 7
+// НАПИШІТЬ ПРОГРАМУ, ЯКА ПРОВІРЯЄ ЛОГІН І ПАРОЛЬ, І ВИВОДИТЬ ПРИВІТАННЯ - ЯКЩО ВСЕ ДОБРЕ, АБО ВИДАЄ ПОМИЛКУ , ЩО НЕ ВІРНИЙ ЛОГІН
+
+// let login = "blabla"
+// let password = "lala"
+
+// const userlogin = prompt("Введіть ваш логін")
+// const userpassword = prompt("Введіть ваш пароль")
+
+// if (userlogin === login && userpassword === password) {
+//     console.log("Вітаю")
+// }
+// else {
+//     console.log("Невірні дані")
+//  }
