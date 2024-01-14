@@ -132,3 +132,16 @@
 //     }
 //     break
 // }
+
+// ЗАДАЧА 10
+// НАПИШІТЬ ПРОГРАМУ, ЯКА БУДЕ ВИЗНАЧАТИ ДОВЖИНУ ІМЕНІ , ЯКЩО ІМЯ БІЛЬШЕ 7 СИМВОЛІВ, КОНСОЛЬ ВИВОДИТЬ "Wow, you  have a REALLY long name!" , ЯКЩО МЕНШЕ 7
+// "Your name isn't very long"
+
+// let userName = prompt("Введіть своє ім'я");
+
+// if (userName.length > 7) {
+//     console.log("Wow, you  have a REALLY long name!");
+// }
+// else {
+//     console.log("Your name isn't very long");
+// }
