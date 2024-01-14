@@ -93,25 +93,25 @@
 // ЯКЩО МІСЯЦЬ - ціна 10.99
 // ЯКЩО РІК - ціна 100.99
 
-const period = prompt("Який період підписки").toUpperCase();
+// const period = prompt("Який період підписки").toUpperCase();
 
-switch (period) {
-    case "ДЕНЬ":
-        console.log("Ціна 1.99")
-        break;
+// switch (period) {
+//     case "ДЕНЬ":
+//         console.log("Ціна 1.99")
+//         break;
     
-        case "НЕДІЛЯ":
-        console.log("Ціна 5.99")
-        break;
+//         case "НЕДІЛЯ":
+//         console.log("Ціна 5.99")
+//         break;
     
-        case "МІСЯЦЬ":
-        console.log("Ціна 10.99")
-        break;
+//         case "МІСЯЦЬ":
+//         console.log("Ціна 10.99")
+//         break;
     
-        case "РІК":
-        console.log("Ціна 100.99")
-        break;
+//         case "РІК":
+//         console.log("Ціна 100.99")
+//         break;
     
-    default:
-        console.log("Невірний період")
-}
+//     default:
+//         console.log("Невірний період")
+// }
