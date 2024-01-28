@@ -150,7 +150,7 @@
 // return finishString.join(" ")
 // }
 
-// console.log(capitalize('the quick brown fox')) 
+// console.log(capitalize('the quick brown fox'))
 
 // ЗАДАЧА 9
 // Напишіть функцію для роботи з колекцією навчаючих курсів courses:
@@ -203,3 +203,29 @@
 
 // console.log(updateCourse("Express", "NestJS"));
 // console.log(updateCourse("CSS", "Express"));
+
+
+// ЗАДАЧА 1
+// Напишіть скрипт,для обєкта user в послідовності:
+
+//  добавляє поле mood із значенням 'happy'
+// замінює значення hobby на 'skydiving'
+// замінює значення  premium на false
+// виводить отримане обєкта user в форматі ключ:значення використовуючи  Object.keys() и for...of
+
+//  const user = {
+//    name: "Mango",
+//    age: 20,
+//    hobby: "html",
+//    premium: true,
+// };
+
+// user.mood = "happy"
+// user.hobby = 'skydiving'
+// user.premium = false
+
+// let obgKeys = Object.keys(user)
+
+// for (let key of obgKeys) {
+//     console.log(`${key} ${user[key]}`)
+// }
