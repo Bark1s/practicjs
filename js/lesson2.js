@@ -61,3 +61,18 @@
 //   }
 //   return smallNumber;
 // }
+
+
+// ЗАДАЧА 4
+// Провірте , чи являється рядок полідромом
+// const str = "ротатор"; //true
+// const newString = "Hello"; //false
+
+// const str = "ротатор";
+// const newString = "Hello";
+
+// const strReverse = newString.split("").reverse().join("");
+
+// console.log(newString === strReverse);
+
+
