@@ -204,6 +204,7 @@
 // console.log(updateCourse("Express", "NestJS"));
 // console.log(updateCourse("CSS", "Express"));
 
+//==================OBJECT=====================
 
 // ЗАДАЧА 1
 // Напишіть скрипт,для обєкта user в послідовності:
@@ -229,3 +230,26 @@
 // for (let key of obgKeys) {
 //     console.log(`${key} ${user[key]}`)
 // }
+
+
+// ЗАДАЧА 2
+// У вас є обєкт , у якому зберігаються зарплати нашої команди.
+// Напишіть код , для підрахунку всіх зарплат і збережіть результат в змінні sum
+// Повинно получитись 390, якщо обєкт salaries пустий , то результат буде 0
+// ЩОБ МОЖНА БУЛО ПЕРЕВИКОРИСТОВУВАТИ ЛОГІКУ, ТОМУ ПИШЕМО ФУНКЦІЮ
+
+// const salaries = {
+//   John: 100,
+//   Ann: 160,
+//   Pete: 130,
+// };
+
+// function summary(salaries) {
+//   let sum = 0;
+//   for (i = 0; i < Object.values(salaries).length; i++) {
+//     sum += Object.values(salaries)[i];
+//   }
+//   return sum;
+// }
+
+// console.log(summary(salaries));
