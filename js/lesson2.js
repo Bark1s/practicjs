@@ -40,3 +40,24 @@
 // for (let i = 0; i < array.length; i += 1){
 //     console.log(`${i +1} ${array[i]}`)
 // }
+
+
+// ЗАДАЧА 3
+// Напишіть код , який шукає саме найменше число в масиві
+// 1) напишіть циклом for
+// const numbers = [2, 17, 94, 1, 23, 37];
+// 2) перепишіть функцією findSmallestNumber(numbers)
+// console.log(findSmallestNumber([2, 17, 94, 1, 23, 37]));
+// console.log(findSmallestNumber([49, 4, 83, 7, 12]));
+
+// const numbers = [2, 17, 94, 1, 23, 37];
+
+// function findSmallestNumber(numbers) {
+//   let smallNumber = numbers[0];
+//   for (let i = 1; i < numbers.length; i++) {
+//     if (numbers[i] < smallNumber) {
+//       smallNumber = numbers[i];
+//     }
+//   }
+//   return smallNumber;
+// }
