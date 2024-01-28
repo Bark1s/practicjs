@@ -151,3 +151,55 @@
 // }
 
 // console.log(capitalize('the quick brown fox')) 
+
+// ЗАДАЧА 9
+// Напишіть функцію для роботи з колекцією навчаючих курсів courses:
+
+// addCourse(name) - добавляє курс у кінець колекції
+// removeCourse(name) - видаляє курс із колекції
+// updateCourse(oldName, newName)- змінює імя на нове
+// const courses = ["HTML", "CSS", "JavaScript", "React", "PostgreSQL"];
+
+// addCourse("Express"); // ['HTML', 'CSS', 'JavaScript', 'React', 'PostgreSQL', 'Express']
+// addCourse("CSS"); // 'У вас уже є такий курс'
+// removeCourse("React"); // ['HTML', 'CSS', 'JavaScript', 'PostgreSQL', 'Express']
+// removeCourse("Vue"); // 'Курс з таким іменем не найдено'
+// updateCourse("Express", "NestJS"); // ['HTML', 'CSS', 'JavaScript', 'PostgreSQL', 'NestJS']
+// console.log(courses);
+
+
+// const addCourse = function (name) {
+//   if (courses.includes(name)) {
+//     return "У вас уже є такий курс";
+//   } else {
+//     courses.push(name);
+//     return courses;
+//   }
+// };
+
+// console.log(addCourse("Express")); // ['HTML', 'CSS', 'JavaScript', 'React', 'PostgreSQL', 'Express']
+// console.log(addCourse("CSS")); // 'У вас уже є такий курс'
+
+// const removeCourse = function (name) {
+//   if (courses.indexOf(name) === -1) {
+//     return "Курс з таким іменем не найдено";
+//   } else {
+//     courses.splice(courses.indexOf(name), 1);
+//     return courses;
+//   }
+// };
+
+// console.log(removeCourse("React"));
+// console.log(removeCourse("Vue"));
+
+// const updateCourse = function (oldName, newName) {
+//   if (courses.indexOf(oldName) === -1) {
+//     return `Курсу не існує`;
+//   } else {
+//     courses.splice(courses.indexOf(oldName), 1, newName);
+//     return courses;
+//   }
+// };
+
+// console.log(updateCourse("Express", "NestJS"));
+// console.log(updateCourse("CSS", "Express"));
