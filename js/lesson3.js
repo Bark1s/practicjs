@@ -134,3 +134,16 @@ const scientists = [
 
 // console.log(something / scientists.length)
  
+
+// 3) відсортувати по алфавіту;
+
+// const sortName = scientists.toSorted((nameA, nameB) => nameA.name.localeCompare(nameB.name));
+// console.log(sortName);
+
+// const sort = [...scientists].sort((a, b) => a.name > b.name ? 1 : -1);
+// console.log(sort)
+
+// 4)відсортувати по кількості прожитих років;
+
+// const sortLifeOld = scientists.toSorted((a, b) => (a.dead - a.born) - (b.dead - b.born));
+// console.log(sortLifeOld)
