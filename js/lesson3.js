@@ -292,3 +292,35 @@
 // items.removeItem("Ківі")
 
 // console.log(items)
+
+
+// Напиши клас Client який створює об'єкт із властивостями login і email.
+// Оголоси приватні властивості #login і #email, доступ до яких зроби через геттер та сеттер login і email.
+
+// class Client {
+//     #login; 
+//     #email;
+//     constructor(login, email) {
+//         this.#login = login;
+//         this.#email = email;
+        
+//     } 
+//     get login() {
+//         return this.#login
+//     }
+//     set login(newLogin) {
+//         this.#login = newLogin;       
+//     }
+
+//     get email() {
+//         return this.#email
+//     }
+//     set email(newEmail) {
+//         this.#email = newEmail;       
+//     }
+// }
+
+// const clientOne = new Client("shcherbiuk", "dfsdgsdssd@mm")
+// console.log(clientOne.login)
+// console.log(clientOne.email)
+// console.log(clientOne)
