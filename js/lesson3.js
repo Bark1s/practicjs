@@ -189,3 +189,13 @@
 // const averege = peopleArray.map(person => person.age).reduce((acc, ageA) => acc + ageA, 0) / peopleArray.length;
 // console.log(averege); 
 
+// Задача 4:
+// Об'єкт: Масив чисел.
+// Умова: Знайти максимальне число в масиві. Використати метод reduce для порівняння чисел та знаходження максимального.
+// const numbersArray = [8, 4, 12, 6, 10];
+
+// const maxNumber = numbersArray.reduce(
+//   (max, current) => (current > max ? current : max),
+//   numbersArray[0]
+// );
+// console.log(maxNumber);
