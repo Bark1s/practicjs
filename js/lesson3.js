@@ -100,7 +100,7 @@
 //       dead: 1852,
 //       id: 9,
 //     },
-  
+
 //     {
 //       name: "Lise",
 //       surname: "Meitner",
@@ -125,7 +125,7 @@
 //   ];
 
 // const newScien = scientists.filter((scientist) => (scientist.born < 1900) && (scientist.born > 1800)).map((scientist) => `${scientist.name} ${scientist.surname}`)
- 
+
 // console.log(newScien)
 
 // 2)порахувати загальну суму років скільки прожили вчені , і визначити середнє значення;
@@ -133,7 +133,6 @@
 // const something = scientists.reduce((acc, scientist) => acc + (scientist.dead - scientist.born), 0)
 
 // console.log(something / scientists.length)
- 
 
 // 3) відсортувати по алфавіту;
 
@@ -176,7 +175,6 @@
 
 // console.log(stringsArray.filter((word) => word.length < 5))
 
-
 // Об'єкт: Масив об'єктів з властивістю "вік".
 // Умова: Знайти середній вік усіх об'єктів.Використати метод map для витягування властивостей "вік", а потім використати reduce для обчислення середнього значення.
 // const peopleArray = [
@@ -214,3 +212,21 @@
 // const maxArea = rectanglesArray.reduce((maxAr, currentAr) => (currentAr.area > maxAr ? currentAr.area : maxAr), rectanglesArray[0].area)
 
 // console.log(maxArea)
+
+// Об'єкт: Масив об'єктів з властивістю "рейтинг".
+// Умова: Знайти середній рейтинг об'єктів, які мають рейтинг вище за 4. Використати метод filter для відфільтрування об'єктів з рейтингом вище за 4, потім використати map для витягування рейтингу та reduce для обчислення середнього значення.
+// const objectsArray = [
+//   { name: "Object1", rating: 3 },
+//   { name: "Object2", rating: 5 },
+//   { name: "Object3", rating: 4 },
+//   { name: "Object4", rating: 2 },
+//   { name: "Object5", rating: 6 },
+// ];
+
+// const ratingFour = objectsArray.filter((ratin) => ratin.rating > 4);
+// const ratinArr =
+//   ratingFour
+//     .map((ratin) => ratin.rating)
+//     .reduce((acc, ratin) => acc + ratin, 0) / ratingFour.length;
+
+// console.log(ratinArr);
