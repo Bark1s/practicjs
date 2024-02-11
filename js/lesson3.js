@@ -187,7 +187,7 @@
 // ];
 
 // const averege = peopleArray.map(person => person.age).reduce((acc, ageA) => acc + ageA, 0) / peopleArray.length;
-// console.log(averege); 
+// console.log(averege);
 
 // Задача 4:
 // Об'єкт: Масив чисел.
@@ -199,3 +199,18 @@
 //   numbersArray[0]
 // );
 // console.log(maxNumber);
+
+// Задача 5:
+// Об'єкт: Масив об'єктів з властивістю "площа".
+// Умова: Знайти об'єкт з найбільшою площею.
+// Використати метод reduce для порівняння площ об'єктів та знаходження об'єкта з найбільшою площею.
+// const rectanglesArray = [
+//   { width: 5, height: 10, area: 50 },
+//   { width: 8, height: 6, area: 48 },
+//   { width: 7, height: 5, area: 35 },
+//   { width: 10, height: 3, area: 30 }
+// ];
+
+// const maxArea = rectanglesArray.reduce((maxAr, currentAr) => (currentAr.area > maxAr ? currentAr.area : maxAr), rectanglesArray[0].area)
+
+// console.log(maxArea)
