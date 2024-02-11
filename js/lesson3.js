@@ -175,3 +175,17 @@
 // const stringsArray = ["apple", "banana", "kiwi", "grape", "pear"];
 
 // console.log(stringsArray.filter((word) => word.length < 5))
+
+
+// Об'єкт: Масив об'єктів з властивістю "вік".
+// Умова: Знайти середній вік усіх об'єктів.Використати метод map для витягування властивостей "вік", а потім використати reduce для обчислення середнього значення.
+// const peopleArray = [
+//   { name: "John", age: 25 },
+//   { name: "Alice", age: 30 },
+//   { name: "Bob", age: 22 },
+//   { name: "Eve", age: 35 }
+// ];
+
+// const averege = peopleArray.map(person => person.age).reduce((acc, ageA) => acc + ageA, 0) / peopleArray.length;
+// console.log(averege); 
+
