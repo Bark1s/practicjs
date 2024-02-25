@@ -70,53 +70,90 @@
 //  <ul class="js-list"></ul>
 // 3.2 ДОБАВТЕ КНОПКУ, ЧЕРЕЗ ЯКУ МИ КУПЛЯТИМЕМО ТОВАР
 
-const instruments = [
-  {
-    id: 1,
-    img: "https://content.rozetka.com.ua/goods/images/big/13664457.jpg",
-    name: "Молоток",
-    price: 150,
-  },
-  {
-    id: 2,
-    img: "https://machtz.com.ua/files/resized/products/dsc_2898_new.800x550.jpg",
-    name: "Перфоратор",
-    price: 3000,
-  },
-  {
-    id: 3,
-    img: "https://content2.rozetka.com.ua/goods/images/big_tile/232653359.jpg",
-    name: "Рівень",
-    price: 2000,
-  },
-];
+// const instruments = [
+//   {
+//     id: 1,
+//     img: "https://content.rozetka.com.ua/goods/images/big/13664457.jpg",
+//     name: "Молоток",
+//     price: 150,
+//   },
+//   {
+//     id: 2,
+//     img: "https://machtz.com.ua/files/resized/products/dsc_2898_new.800x550.jpg",
+//     name: "Перфоратор",
+//     price: 3000,
+//   },
+//   {
+//     id: 3,
+//     img: "https://content2.rozetka.com.ua/goods/images/big_tile/232653359.jpg",
+//     name: "Рівень",
+//     price: 2000,
+//   },
+// ];
 
-const list = document.querySelector(".js-list");
-function createList() {
-  const markUp = instruments.map(
-    ({ id, img, name, price }) =>
-      `<li data-id="${id}">
-      <img src="${img}" alt=${name}">
-      <p>${name}</p>
-      <span>${price}</span>
-      <button type="button" class="buy-bttn">Buy</button>
-    </li>`
-  );
-  list.insertAdjacentHTML("afterbegin", markUp);
-}
-createList();
+// const list = document.querySelector(".js-list");
+// function createList() {
+//   const markUp = instruments.map(
+//     ({ id, img, name, price }) =>
+//       `<li data-id="${id}">
+//       <img src="${img}" alt=${name}">
+//       <p>${name}</p>
+//       <span>${price}</span>
+//       <button type="button" class="buy-bttn">Buy</button>
+//     </li>`
+//   );
+//   list.insertAdjacentHTML("afterbegin", markUp);
+// }
+// createList();
 
-const buyButton = document.querySelectorAll("button[data-id]");
+// const buyButton = document.querySelectorAll("button[data-id]");
 
-list.addEventListener("click", showShopList);
+// list.addEventListener("click", showShopList);
 
-function showShopList(event) {
-  if (!event.target.classList.contains("buy-bttn")) {
-    return;
-  }
-  const summary = event.target.closest("li");
-  const id = summary.dataset.id;
-  console.log(id);
-  const find = instruments.find((instrument) => instrument.id === Number(id));
-  console.log(find);
-}
+// function showShopList(event) {
+//   if (!event.target.classList.contains("buy-bttn")) {
+//     return;
+//   }
+//   const summary = event.target.closest("li");
+//   const id = summary.dataset.id;
+//   console.log(id);
+//   const find = instruments.find((instrument) => instrument.id === Number(id));
+//   console.log(find);
+// }
+
+// task4
+// Задача 4
+// Створити простий веб-додаток для управління списком завдань. Додаток повинен дозволяти користувачу додавати нові завдання, відзначати їх як виконані та видаляти завдання.
+//    <h1>Список Завдань</h1>
+//     <!-- Форма для введення нового завдання -->
+//     <form id="taskForm">
+//         <input type="text" id="newTask" placeholder="Нове завдання" required>
+//         <button type="button" onclick="addTask()">Додати</button>
+//     </form>
+//     <!-- Список завдань -->
+//     <ul id="taskList">
+//         <!-- Сюди будуть додаватися завдання -->
+//     </ul>
+// {/* При введенні нового завдання і натисканні кнопки "Додати", це завдання повинно додаватися до списку завдань на сторінці.Додайте кнопку видалення завдань зі списку.
+// Використовуй createElement */}
+
+// const form = document.querySelector("#taskForm");
+// const taskList = document.querySelector("#taskList");
+
+// form.addEventListener("submit", (event) => {
+//   event.preventDefault();
+//   const imput = document.getElementById("newTask");
+//   const imputValue = imput.value.trim();
+//   const listItem = document.createElement("li");
+//   listItem.textContent = imputValue;
+//   const btnDelete = document.createElement("button");
+//   btnDelete.textContent = "Видалити";
+//   listItem.append(btnDelete);
+
+//   btnDelete.addEventListener("click", () => {
+//     taskList.removeChild(listItem);
+//   });
+
+//   taskList.append(listItem);
+//   form.reset();
+// });
