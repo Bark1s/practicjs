@@ -40,8 +40,8 @@
 //   return `rgb(${r},${g},${b})`;
 // };
 
-// //    
-// const form = document.querySelector(".form") 
+// //
+// const form = document.querySelector(".form")
 // const total = document.querySelector(".text-right")
 // const priceInput = document.querySelector("#price")
 // const amountInput = document.querySelector("#quantity")
@@ -65,3 +65,58 @@
 //   htmlAmount.textContent = amount
 
 // }
+// ЗАДАЧА 3
+// 3.1 Є МАСИВ, ПОТРІБНО СТВОРИТИ РОЗМІТКУ ІЗ ТИХ КАРТОК (ВИКОРИСТАЙТЕ ШАБЛОННИЙ РЯДОК)
+//  <ul class="js-list"></ul>
+// 3.2 ДОБАВТЕ КНОПКУ, ЧЕРЕЗ ЯКУ МИ КУПЛЯТИМЕМО ТОВАР
+
+const instruments = [
+  {
+    id: 1,
+    img: "https://content.rozetka.com.ua/goods/images/big/13664457.jpg",
+    name: "Молоток",
+    price: 150,
+  },
+  {
+    id: 2,
+    img: "https://machtz.com.ua/files/resized/products/dsc_2898_new.800x550.jpg",
+    name: "Перфоратор",
+    price: 3000,
+  },
+  {
+    id: 3,
+    img: "https://content2.rozetka.com.ua/goods/images/big_tile/232653359.jpg",
+    name: "Рівень",
+    price: 2000,
+  },
+];
+
+const list = document.querySelector(".js-list");
+function createList() {
+  const markUp = instruments.map(
+    ({ id, img, name, price }) =>
+      `<li data-id="${id}">
+      <img src="${img}" alt=${name}">
+      <p>${name}</p>
+      <span>${price}</span>
+      <button type="button" class="buy-bttn">Buy</button>
+    </li>`
+  );
+  list.insertAdjacentHTML("afterbegin", markUp);
+}
+createList();
+
+const buyButton = document.querySelectorAll("button[data-id]");
+
+list.addEventListener("click", showShopList);
+
+function showShopList(event) {
+  if (!event.target.classList.contains("buy-bttn")) {
+    return;
+  }
+  const summary = event.target.closest("li");
+  const id = summary.dataset.id;
+  console.log(id);
+  const find = instruments.find((instrument) => instrument.id === Number(id));
+  console.log(find);
+}
