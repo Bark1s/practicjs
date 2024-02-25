@@ -1,23 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
 
-<body>
+  <body>
+    <!-- <ul class="js-goods"></ul> -->
+    <div class="container">
+      <h2 class="title">Скільки коштує мясо на шашлик :) ?</h2>
 
-    <ul class="js-goods"></ul>
+      <form class="form">
+        <label for="price">Ціна грн</label>
+        <input type="text" id="price" name="price" value="50" />
+        <label for="quantity">Кількість<span class="amount">1</span>кг </label>
 
+        <input
+          type="range"
+          id="quantity"
+          name="quantity"
+          value="1"
+          min="1"
+          ,
+          max="20"
+        />
+        <button class="btn" type="submit">Calculate</button>
+      </form>
+
+      <p class="text-right total"></p>
+    </div>
 
     <!-- <script src="./js/lesson1.js"></script> -->
     <!-- <script src="./js/lesson2.js"></script> -->
     <!-- <script src="./js/lesson3.js"></script> -->
     <script src="./js/lesson4.js" type="module"></script>
-
-
-</body>
-
+  </body>
 </html>
