@@ -85,29 +85,29 @@
 
 // ЗАДАЧА 1
 // Створити сторінку з двома кнопками: "Старт" та "Стоп". При кліці на кнопку "Старт" розпочинається безперервний цикл, який кожну секунду змінює фоновий колір сторінки на випадковий шестнадцятковий колір та вимикає кнопку "Старт" до завершення циклу. Коли натискається кнопка "Стоп", цикл зупиняється, і кнопка "Старт" стає доступною для подальших кліків. Для реалізації використовується HTML для створення сторінки з кнопками та JavaScript код для взаємодії з цими елементами та виконання зазначених функцій.
-function getRandomHexColor() {
-  return `#${Math.floor(Math.random() * 16777215)
-    .toString(16)
-    .padStart(6, 0)}`;
-}
+// function getRandomHexColor() {
+//   return `#${Math.floor(Math.random() * 16777215)
+//     .toString(16)
+//     .padStart(6, 0)}`;
+// }
 
-const start = document.querySelector("button[data-start]");
-const stop = document.querySelector("button[data-stop]");
+// const start = document.querySelector("button[data-start]");
+// const stop = document.querySelector("button[data-stop]");
 
-let timerID = null;
+// let timerID = null;
 
-start.addEventListener("click", startInterval);
+// start.addEventListener("click", startInterval);
 
-function startInterval() {
-  timerID = setInterval(() => {
-    document.body.style.backgroundColor = getRandomHexColor();
-    start.disabled = true;
-  }, 1000);
-}
+// function startInterval() {
+//   timerID = setInterval(() => {
+//     document.body.style.backgroundColor = getRandomHexColor();
+//     start.disabled = true;
+//   }, 1000);
+// }
 
-stop.addEventListener("click", stopInterval);
+// stop.addEventListener("click", stopInterval);
 
-function stopInterval() {
-  clearInterval(timerID);
-  start.disabled = false;
-}
+// function stopInterval() {
+//   clearInterval(timerID);
+//   start.disabled = false;
+// }
