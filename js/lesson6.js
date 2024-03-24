@@ -67,3 +67,66 @@
 // }
 
 // ++++++++++======================================
+// НАПИШІТЬ ПАГІНАЦІЮ, ДЛЯ ПЕРЕХОДУ ПО СТОРІНКАХ
+// https://docs.github.com/en/rest/search?apiVersion=2022-11-28#search-user
+// //
+// fetch(`https://api.github.com/search/users?q=${}&client_id=67684cabc84f94f0938e&client_secret=782ea639550c1b5d986bdd8129813652ed04c92c`)
+
+// const div = document.querySelector("#root")
+// const form = document.querySelector("#form")
+// const moreBtn = document.querySelector("#more")
+// let inputInfo
+// let page = 1
+
+// form.addEventListener("submit", doSubmit)
+// moreBtn.addEventListener("click", doSubmit)
+
+// function doSubmit(event) {
+//     event.preventDefault()
+//     inputInfo = inputInfo ?? event.target.elements.name.value.trim()
+//     const BASE_URL = "https://api.github.com/search/users"
+
+
+//     const gotInfo = axios.get(`${BASE_URL}?q=${inputInfo}&client_id=67684cabc84f94f0938e&client_secret=782ea639550c1b5d986bdd8129813652ed04c92c&per_page=5&page=${page}`)
+
+//     gotInfo.then(obj => {
+//         if (obj.data.items.length > 0) {
+//             results(obj.data.items)
+//             page++
+//         }
+      
+//     }).catch(err => console.log(err))
+// }
+
+
+
+// function renderInfo(info) {
+//     const murkUp = `<div>
+//       <h2>${info.login}</h2>
+//       <img width="200" src="${info.avatar_url}" alt="${info.login}" />
+//       <a href="${info.html_url}"><span>Git Page</span></a>
+//     </div>`
+//     div.insertAdjacentHTML("beforeend", murkUp)
+// }
+
+// function results(infoFrom) {
+//     infoFrom.map((elem) => renderInfo(elem))
+// }
+
+// homework tasks (additional)
+
+// ЗАДАЧА 1
+// ВИКОРИСТОВУЮЧИ API ДАНОГО ПОСИЛАННЯ https://pixabay.com/api/docs/ , 
+// ТА ЗА ДОПОМОГОЮ fetch , ВИВЕДИ НА ЕКРАН ОТРИМАНИЙ РЕЗУЛЬТАТ (ВИКОРИСТАЙ МЕТОД createElement())
+
+
+// ЗАДАЧА 2
+// ВИКОРИСТОВУЮЧИ API ДАНОГО ПОСИЛАННЯ  https://www.thecocktaildb.com/api.php , ТА ЗА ДОПОМОГОЮ fetch, ВИВОДЬ РЕЗУЛЬТАТ НА ЕКРАН.
+// РЕЗУЛЬТАТ ПОШУКУ МОЖНА ОТРИМАТИ ІЗ ІМПУТА, КОЛИ КЛІЄНТ НАБРАВ ДАНИЙ ТОВАР(ВИКОРИСТАЙ РОЗМІТКУ ЗА ДОПОМОГОЮ ШАБЛОННОГО РЯДКА)
+
+//   <div id='root'>
+//     <form id='form'>
+//         <input type="text" id="input">
+//       <button>Пошук</button>
+//     </form>
+//   </div>
